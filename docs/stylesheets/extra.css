@@ -2,7 +2,7 @@
    0. Default page scale (1.25 = feels like 125% zoom)
    ========================================================================= */
 :root {
-  --page-scale: 1.15;
+  --page-scale: 1.2;
 }
 
 html {
