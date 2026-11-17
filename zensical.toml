@@ -1,0 +1,162 @@
+[project]
+site_name = "Physical AI Study Notes"
+site_description = "A demo documentation site"
+# IMPORTANT: navigation.instant needs site_url. Set it to your real address
+# before publishing, e.g. "https://kishormuthal.github.io/physical-ai-notes/"
+site_url = "https://kishormuthal.github.io/physical-ai-notes/"
+# site_url = "https://example.com/"
+extra_css = ["stylesheets/extra.css"]
+extra_javascript = ["javascripts/extra.js"]
+
+# ---------------------------------------------------------------------------
+# Navigation: the order below is the order in the top tabs and left sidebar.
+# Each entry is { "Title shown in menu" = "path/to/file.md" }.
+# Numbers are only in the file/folder names (they set the order), not in the titles.
+# NOTE: with an explicit nav, a page that is NOT listed here will not appear
+# in the menu. Add every new .md file to the right place below.
+# ---------------------------------------------------------------------------
+nav = [
+  { "Home" = "index.md" },
+
+  { "NVIDIA Physical AI" = [
+    { "NVIDIA Intro" = [
+      { "Introduction" = "01 NVIDIA Physical AI/01 NVIDIA Intro/01 Introduction.md" },
+      { "Three computer solution" = "01 NVIDIA Physical AI/01 NVIDIA Intro/02 Three computer solution.md" },
+      { "Robotics Embodiments" = "01 NVIDIA Physical AI/01 NVIDIA Intro/03 NVIDIA Robotics Embodiments.md" },
+      { "Robotics Applications" = "01 NVIDIA Physical AI/01 NVIDIA Intro/04 NVIDIA Robotics Applications.md" },
+      { "Robotics Research" = "01 NVIDIA Physical AI/01 NVIDIA Intro/05 NVIDIA Robotics Research.md" },
+      { "AI for robotics" = "01 NVIDIA Physical AI/01 NVIDIA Intro/06 AI for robotics.md" },
+      { "Simulation for Robotics" = "01 NVIDIA Physical AI/01 NVIDIA Intro/07 Simulation for Robotics.md" },
+      { "Compute for Robotics" = "01 NVIDIA Physical AI/01 NVIDIA Intro/09 Compute for Robotics.md" },
+    ] },
+    { "Market Context" = [
+      { "Market Context" = "01 NVIDIA Physical AI/02 Market Context/10 Market Context.md" },
+      { "Agents in Physical World" = "01 NVIDIA Physical AI/02 Market Context/11 Agents Enter the Physical World.md" },
+      { "NVIDIA Isaac" = "01 NVIDIA Physical AI/02 Market Context/12 Nvidia Isaac.md" },
+    ] },
+    { "Synthetic Data Generation" = [
+      { "Introduction" = "01 NVIDIA Physical AI/03 Synthetic Data Generation/13 Introduction.md" },
+      { "Training Data Challenge" = "01 NVIDIA Physical AI/03 Synthetic Data Generation/14 Training data grand challenge.md" },
+      { "Scaling robot intelligence" = "01 NVIDIA Physical AI/03 Synthetic Data Generation/15 Scaling robot intelligence.md" },
+      { "Agent Tools and Skills" = "01 NVIDIA Physical AI/03 Synthetic Data Generation/16 Agent Tools and Skills.md" },
+      { "NVIDIA Cosmos 3" = "01 NVIDIA Physical AI/03 Synthetic Data Generation/17 nvidia cosmos 3.md" },
+      { "Physical AI Datasets" = "01 NVIDIA Physical AI/03 Synthetic Data Generation/18 Physical AI datasets.md" },
+      { "Data Factory Blueprint" = "01 NVIDIA Physical AI/03 Synthetic Data Generation/19 Physical-ai-data-factory-blueprint.md" },
+      { "NuRec and Isaac Teleop" = "01 NVIDIA Physical AI/03 Synthetic Data Generation/20 Nurec and isaac teleop.md" },
+      { "Omniverse NuRec Libraries" = "01 NVIDIA Physical AI/03 Synthetic Data Generation/21 Omniverse nurec libraries.md" },
+      { "NVIDIA Isaac Teleop" = "01 NVIDIA Physical AI/03 Synthetic Data Generation/22 Nvidia isaac teleop.md" },
+      { "Soma" = "01 NVIDIA Physical AI/03 Synthetic Data Generation/23 Soma.md" },
+    ] },
+    { "Simulation & Robot Learning" = [
+      { "Introduction" = "01 NVIDIA Physical AI/04 Simulation and Robot Learning Framework/24 Introduction.md" },
+      { "How robots become robots" = "01 NVIDIA Physical AI/04 Simulation and Robot Learning Framework/25 How-robots-become-robots.md" },
+      { "NVIDIA Isaac Sim" = "01 NVIDIA Physical AI/04 Simulation and Robot Learning Framework/26 Nvidia-isaac-sim.md" },
+      { "Isaac Sim Physics" = "01 NVIDIA Physical AI/04 Simulation and Robot Learning Framework/27 Isaac-sim-physically-based-simulation.md" },
+      { "Software-in-Loop Testing" = "01 NVIDIA Physical AI/04 Simulation and Robot Learning Framework/28 Isaac Sim software in loop testing.md" },
+      { "NVIDIA Isaac Lab" = "01 NVIDIA Physical AI/04 Simulation and Robot Learning Framework/29 NVIDIA Isaac Lab.md" },
+      { "Isaac Lab Physics" = "01 NVIDIA Physical AI/04 Simulation and Robot Learning Framework/30 Isaac Lab physically based simulation.md" },
+      { "Isaac Lab Use Cases" = "01 NVIDIA Physical AI/04 Simulation and Robot Learning Framework/31 Isaac Lab use cases.md" },
+      { "Isaac Lab Arena" = "01 NVIDIA Physical AI/04 Simulation and Robot Learning Framework/32 Isaac Lab Arena.md" },
+      { "NVIDIA OSMO" = "01 NVIDIA Physical AI/04 Simulation and Robot Learning Framework/33 NVIDIA OSMO.md" },
+      { "Newton" = "01 NVIDIA Physical AI/04 Simulation and Robot Learning Framework/34 Newton.md" },
+    ] },
+    { "Foundation Models" = [
+      { "Foundation Models" = "01 NVIDIA Physical AI/05 Foundation Models/35 Foundation Models.md" },
+      { "GR00T Workflow" = "01 NVIDIA Physical AI/05 Foundation Models/36 GR00T End-to-end Workflow.md" },
+      { "GR00T 1.7 Model" = "01 NVIDIA Physical AI/05 Foundation Models/37 GR00T 1.7 Model.md" },
+      { "Unitree H2 Plus" = "01 NVIDIA Physical AI/05 Foundation Models/38 Unitree H2 Plus.md" },
+      { "SONIC" = "01 NVIDIA Physical AI/05 Foundation Models/39 SONIC.md" },
+    ] },
+    { "Robot Runtime" = [
+      { "Robot Runtime" = "01 NVIDIA Physical AI/06 Robot Runtime/40 Robot Runtime.md" },
+      { "Building a Humanoid Robot" = "01 NVIDIA Physical AI/06 Robot Runtime/41 What It Takes To Build A Humanoid Robot.md" },
+      { "CUDA-X for Runtime" = "01 NVIDIA Physical AI/06 Robot Runtime/42 CUDA-X Libraries and Models for Runtime.md" },
+      { "NVIDIA Isaac ROS" = "01 NVIDIA Physical AI/06 Robot Runtime/43 NVIDIA Isaac ROS.md" },
+      { "NVIDIA Jetson Thor" = "01 NVIDIA Physical AI/06 Robot Runtime/44 NVIDIA Jetson Thor.md" },
+      { "Jetson: Agent Ready" = "01 NVIDIA Physical AI/06 Robot Runtime/45 Jetson Is Now Agent Ready.md" },
+    ] },
+    { "Ecosystem & Resources" = [
+      { "Physical AI Ecosystem" = "01 NVIDIA Physical AI/07 NVIDIA Ecosystem and Learning Resources/46 Physical AI Ecosystem.md" },
+      { "Learning Resources" = "01 NVIDIA Physical AI/07 NVIDIA Ecosystem and Learning Resources/47 Learning Resources.md" },
+    ] },
+  ] },
+
+  { "Isaac Lab Arena" = [
+    { "Introduction" = "02 Isaac Lab Arena/01 Introduction.md" },
+    { "The Challenge" = "02 Isaac Lab Arena/02 The Challenge.md" },
+    { "Evaluation Space" = "02 Isaac Lab Arena/03 The Challenge - Evaluation Space.md" },
+    { "The Gap" = "02 Isaac Lab Arena/04 The Gap.md" },
+    { "The Solution" = "02 Isaac Lab Arena/05 The Solution.md" },
+    { "The Benefit" = "02 Isaac Lab Arena/06 The Benefit.md" },
+    { "Task Authoring" = "02 Isaac Lab Arena/07 Simplified and Scalable Task Authoring.md" },
+    { "Agentic Task Generation" = "02 Isaac Lab Arena/08 Agentic Task Generation.md" },
+    { "Failure Diagnosis" = "02 Isaac Lab Arena/09 Systematic and Actionable Failure Diagnosis.md" },
+    { "Parallel Evaluation" = "02 Isaac Lab Arena/10 Large Scale Parallel Evaluation.md" },
+    { "Evaluation Throughput" = "02 Isaac Lab Arena/11 Large Scale Parallel Evaluation - Throughput.md" },
+    { "Community Benchmarks" = "02 Isaac Lab Arena/12 Community Benchmarks on Unified Core.md" },
+    { "End-to-end Workflow" = "02 Isaac Lab Arena/13 End-to-end Workflow.md" },
+  ] },
+
+  { "NVIDIA Cosmos" = [
+    { "Overview" = "03 NVIDIA Cosmos/01 NVIDIA Cosmos.md" },
+    { "Cosmos 3 Omnimodel" = "03 NVIDIA Cosmos/02 NVIDIA Cosmos 3 Open Frontier Omnimodel.md" },
+    { "One Model, Many Capabilities" = "03 NVIDIA Cosmos/03 One Model Many Capabilities.md" },
+    { "Cosmos Model Family" = "03 NVIDIA Cosmos/07 Cosmos Open World Foundation Model Family.md" },
+    { "Cosmos 3 Frontier" = "03 NVIDIA Cosmos/08 Cosmos 3 Is The Frontier Of Physical AI.md" },
+    { "Mixture of Transformers" = "03 NVIDIA Cosmos/09 Mixture of Transformer Architecture.md" },
+    { "Vision-Language Reasoning" = "03 NVIDIA Cosmos/10 Cosmos for Vision Language Reasoning.md" },
+    { "Cosmos 3 as VLM" = "03 NVIDIA Cosmos/11 Cosmos 3 as Vision Language Model (1).md" },
+    { "Real-Time Reasoning" = "03 NVIDIA Cosmos/12 Unlock Real-Time Reasoning for Physical and Vision AI.md" },
+    { "Image Generation" = "03 NVIDIA Cosmos/13 Cosmos for Image Generation.md" },
+    { "World Generation" = "03 NVIDIA Cosmos/14 Cosmos for World Generation.md" },
+    { "Worlds With Sound" = "03 NVIDIA Cosmos/15 Generate Worlds With Sound On.md" },
+    { "Data Augmentation" = "03 NVIDIA Cosmos/16 Cosmos For Large Scale Data Augmentation.md" },
+    { "Transfer Capabilities" = "03 NVIDIA Cosmos/17 Transfer Capabilities.md" },
+    { "Action Generation" = "03 NVIDIA Cosmos/18 Cosmos for Infering and Generating Action.md" },
+    { "Post-trained Robot Policy" = "03 NVIDIA Cosmos/19 State-of-the-art Post-trained Robot Policy.md" },
+    { "Self-Driving Policy" = "03 NVIDIA Cosmos/20 Policy for self-driving vehicles.md" },
+    { "Post-training on Domain Data" = "03 NVIDIA Cosmos/21 Post-training Cosmos for domain-specific data.md" },
+    { "Cosmos Evolution" = "03 NVIDIA Cosmos/22 Cosmos Evolution.md" },
+    { "Open Physical AI Dataset" = "03 NVIDIA Cosmos/23 Open-Source Physical AI Dataset.md" },
+    { "Specialized World Models" = "03 NVIDIA Cosmos/24 Post-training For Specialized World Models.md" },
+    { "Cosmos Curator" = "03 NVIDIA Cosmos/25 Cosmos Curator Data Processing and Curation Pipeline.md" },
+    { "Cosmos Guardrails" = "03 NVIDIA Cosmos/26 Cosmos Guardrails.md" },
+    { "Dataset Search" = "03 NVIDIA Cosmos/27 NVIDIA Cosmos Dataset Search.md" },
+    { "Video Search (VSS)" = "03 NVIDIA Cosmos/28 NVIDIA Blueprint for Video Search and Summarization (VSS).md" },
+    { "Cosmos-H" = "03 NVIDIA Cosmos/30 Introducing NVIDIA Cosmos-H.md" },
+    { "Customer story" = [
+      { "Skild AI" = "03 NVIDIA Cosmos/31 Customer story/31 Skild AI.md" },
+      { "Toyota Research Institute" = "03 NVIDIA Cosmos/31 Customer story/32 Toyota Research Institute.md" },
+      { "Oxa" = "03 NVIDIA Cosmos/31 Customer story/33 Oxa.md" },
+      { "Levatas" = "03 NVIDIA Cosmos/31 Customer story/34 Levatas.md" },
+    ] },
+    { "Learning Resources" = "03 NVIDIA Cosmos/35-36 Learning Resources in the Cosmos.md" },
+  ] },
+]
+
+[project.theme]
+variant = "modern"
+features = [
+  "navigation.tracking",
+  "content.tooltips",
+  "content.footnote.tooltips",
+  "navigation.footer",   # previous / next page links
+  "navigation.instant",
+  "navigation.instant.prefetch",
+  "navigation.top",
+  "navigation.path",
+  "navigation.prune",
+  "navigation.tabs",
+  "navigation.tabs.sticky",
+  # "navigation.sections", # groups inside each tab shown as sidebar headings
+  "toc.follow",
+  "content.code.copy",
+]
+
+[project.extra]
+generator = false
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/yourname"
+name = "GitHub"

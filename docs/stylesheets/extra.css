@@ -1,0 +1,310 @@
+/* =========================================================================
+   0. Default page scale (1.25 = feels like 125% zoom)
+   ========================================================================= */
+:root {
+  --page-scale: 1.15;
+}
+
+html {
+  font-size: calc(125% * var(--page-scale));
+}
+
+/* Material bumps the base size on wide screens; keep that, then scale it */
+@media screen and (min-width: 100em) {
+  html { font-size: calc(137.5% * var(--page-scale)); }
+}
+@media screen and (min-width: 125em) {
+  html { font-size: calc(150% * var(--page-scale)); }
+}
+
+/* =========================================================================
+   1. Font override (code blocks keep their own monospace font)
+   ========================================================================= */
+html.has-user-font body,
+html.has-user-font .md-typeset {
+  font-family: var(--user-font), system-ui, sans-serif !important;
+}
+
+/* =========================================================================
+   2. Full-width layout (remove if you don't want it)
+   ========================================================================= */
+.md-grid {
+  max-width: 125%;
+}
+
+/* =========================================================================
+   3. Color themes
+   Each theme sets Material-style CSS variables on <html> and <body>.
+   To add a theme: copy a block, change the name and colors, then add it
+   to the THEMES list in extra.js.
+   ========================================================================= */
+
+/* ---- Light ---- */
+html[data-user-theme="light"],
+html[data-user-theme="light"] body {
+  color-scheme: light;
+  --md-default-bg-color: #ffffff;
+  --md-default-fg-color: rgba(0, 0, 0, 0.87);
+  --md-default-fg-color--light: rgba(0, 0, 0, 0.6);
+  --md-default-fg-color--lighter: rgba(0, 0, 0, 0.35);
+  --md-default-fg-color--lightest: rgba(0, 0, 0, 0.07);
+  --md-typeset-color: rgba(0, 0, 0, 0.87);
+  --md-typeset-a-color: #3f51b5;
+  --md-primary-fg-color: #3f51b5;
+  --md-primary-bg-color: #ffffff;
+  --md-accent-fg-color: #526cfe;
+  --md-code-bg-color: #f5f5f5;
+  --md-code-fg-color: #36464e;
+}
+
+/* ---- Dark ---- */
+html[data-user-theme="dark"],
+html[data-user-theme="dark"] body {
+  color-scheme: dark;
+  --md-default-bg-color: #1e2129;
+  --md-default-fg-color: rgba(255, 255, 255, 0.87);
+  --md-default-fg-color--light: rgba(255, 255, 255, 0.65);
+  --md-default-fg-color--lighter: rgba(255, 255, 255, 0.35);
+  --md-default-fg-color--lightest: rgba(255, 255, 255, 0.08);
+  --md-typeset-color: rgba(255, 255, 255, 0.87);
+  --md-typeset-a-color: #8c9eff;
+  --md-primary-fg-color: #2a2e3a;
+  --md-primary-bg-color: #ffffff;
+  --md-accent-fg-color: #b39ddb;
+  --md-code-bg-color: #2a2e3a;
+  --md-code-fg-color: #e0e0e0;
+}
+
+/* ---- Sepia (easy on the eyes) ---- */
+html[data-user-theme="sepia"],
+html[data-user-theme="sepia"] body {
+  color-scheme: light;
+  --md-default-bg-color: #f4ecd8;
+  --md-default-fg-color: #5b4636;
+  --md-default-fg-color--light: #7a6350;
+  --md-default-fg-color--lighter: rgba(91, 70, 54, 0.4);
+  --md-default-fg-color--lightest: rgba(91, 70, 54, 0.12);
+  --md-typeset-color: #5b4636;
+  --md-typeset-a-color: #a0522d;
+  --md-primary-fg-color: #a0522d;
+  --md-primary-bg-color: #fffaf0;
+  --md-accent-fg-color: #c2703d;
+  --md-code-bg-color: #eadfc4;
+  --md-code-fg-color: #4a3a2c;
+}
+
+/* ---- Ocean ---- */
+html[data-user-theme="ocean"],
+html[data-user-theme="ocean"] body {
+  color-scheme: dark;
+  --md-default-bg-color: #0f2a3d;
+  --md-default-fg-color: #d6ecf7;
+  --md-default-fg-color--light: #a9cfe3;
+  --md-default-fg-color--lighter: rgba(214, 236, 247, 0.4);
+  --md-default-fg-color--lightest: rgba(214, 236, 247, 0.1);
+  --md-typeset-color: #d6ecf7;
+  --md-typeset-a-color: #4fc3f7;
+  --md-primary-fg-color: #12354d;
+  --md-primary-bg-color: #ffffff;
+  --md-accent-fg-color: #26c6da;
+  --md-code-bg-color: #12354d;
+  --md-code-fg-color: #cfe8f5;
+}
+
+/* ---- Forest ---- */
+html[data-user-theme="forest"],
+html[data-user-theme="forest"] body {
+  color-scheme: dark;
+  --md-default-bg-color: #14261c;
+  --md-default-fg-color: #dcefe0;
+  --md-default-fg-color--light: #b2d4ba;
+  --md-default-fg-color--lighter: rgba(220, 239, 224, 0.4);
+  --md-default-fg-color--lightest: rgba(220, 239, 224, 0.1);
+  --md-typeset-color: #dcefe0;
+  --md-typeset-a-color: #81c784;
+  --md-primary-fg-color: #1b3527;
+  --md-primary-bg-color: #ffffff;
+  --md-accent-fg-color: #aed581;
+  --md-code-bg-color: #1b3527;
+  --md-code-fg-color: #d3e8d8;
+}
+
+/* ---- Solarized Dark ---- */
+html[data-user-theme="solarized"],
+html[data-user-theme="solarized"] body {
+  color-scheme: dark;
+  --md-default-bg-color: #002b36;
+  --md-default-fg-color: #93a1a1;
+  --md-default-fg-color--light: #839496;
+  --md-default-fg-color--lighter: rgba(147, 161, 161, 0.4);
+  --md-default-fg-color--lightest: rgba(147, 161, 161, 0.12);
+  --md-typeset-color: #93a1a1;
+  --md-typeset-a-color: #268bd2;
+  --md-primary-fg-color: #073642;
+  --md-primary-bg-color: #eee8d5;
+  --md-accent-fg-color: #2aa198;
+  --md-code-bg-color: #073642;
+  --md-code-fg-color: #93a1a1;
+}
+
+/* ---- High Contrast ---- */
+html[data-user-theme="contrast"],
+html[data-user-theme="contrast"] body {
+  color-scheme: dark;
+  --md-default-bg-color: #000000;
+  --md-default-fg-color: #ffffff;
+  --md-default-fg-color--light: #ffffff;
+  --md-default-fg-color--lighter: rgba(255, 255, 255, 0.6);
+  --md-default-fg-color--lightest: rgba(255, 255, 255, 0.2);
+  --md-typeset-color: #ffffff;
+  --md-typeset-a-color: #ffff00;
+  --md-primary-fg-color: #000000;
+  --md-primary-bg-color: #ffffff;
+  --md-accent-fg-color: #00ffff;
+  --md-code-bg-color: #1a1a1a;
+  --md-code-fg-color: #ffffff;
+}
+
+/* ---- Make sure the chosen theme colors actually apply ---- */
+html[data-user-theme] body,
+html[data-user-theme] .md-main,
+html[data-user-theme] .md-content,
+html[data-user-theme] .md-sidebar {
+  background-color: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+}
+html[data-user-theme] .md-typeset,
+html[data-user-theme] .md-typeset h1,
+html[data-user-theme] .md-typeset h2,
+html[data-user-theme] .md-typeset h3,
+html[data-user-theme] .md-typeset h4 {
+  color: var(--md-typeset-color);
+}
+html[data-user-theme] .md-typeset a {
+  color: var(--md-typeset-a-color);
+}
+html[data-user-theme] .md-typeset code,
+html[data-user-theme] .md-typeset pre > code {
+  background-color: var(--md-code-bg-color);
+  color: var(--md-code-fg-color);
+}
+
+/* =========================================================================
+   4. Settings button (in header) + popover panel
+   ========================================================================= */
+#settings-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 4px;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+  flex: 0 0 auto;
+  opacity: 0.9;
+}
+#settings-btn:hover,
+#settings-btn[aria-expanded="true"] {
+  opacity: 1;
+  background: rgba(128, 128, 128, 0.25);
+}
+#settings-btn svg {
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+/* Fallback when the header search bar is not found */
+#settings-btn.floating {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 1001;
+  background: #ffffff;
+  color: #222222;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#settings-panel {
+  display: none;
+  position: fixed;
+  top: 60px;
+  right: 16px;
+  z-index: 1002;
+  width: 290px;
+  max-width: calc(100vw - 16px);
+  box-sizing: border-box;
+  padding: 12px 14px 14px;
+  border-radius: 12px;
+  font-family: system-ui, sans-serif;
+  font-size: 14px;
+  background: #ffffff;
+  color: #222222;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+}
+#settings-panel.open {
+  display: block;
+}
+#settings-panel .picker-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+#settings-panel .picker-close {
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 4px;
+  border-radius: 6px;
+}
+#settings-panel .picker-close:hover {
+  background: rgba(128, 128, 128, 0.2);
+}
+#settings-panel .picker-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+#settings-panel label {
+  font-weight: 600;
+}
+#settings-panel select {
+  font: inherit;
+  flex: 1;
+  max-width: 190px;
+  padding: 5px 6px;
+  border-radius: 6px;
+  color: #222222;
+  background: #ffffff;
+  border: 1px solid rgba(128, 128, 128, 0.5);
+  cursor: pointer;
+}
+#settings-panel .picker-reset {
+  width: 100%;
+  font: inherit;
+  padding: 6px;
+  border-radius: 6px;
+  color: #222222;
+  background: #f2f2f2;
+  border: 1px solid rgba(128, 128, 128, 0.4);
+  cursor: pointer;
+}
+#settings-panel .picker-reset:hover {
+  background: #e6e6e6;
+}
+
+@media print {
+  #settings-btn, #settings-panel { display: none !important; }
+}
