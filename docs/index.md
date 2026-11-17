@@ -76,7 +76,7 @@ This is the honest reason this notes is public.
 I started these notes for myself a private folder where each topic got the time a workshop never could.
 For a long time that studying was invisible. I was learning constantly and showing none of it.
 
-So this is an attempt to be visible about the right things, at the right time. eventually trying to fit in a society 😄
+So this is an attempt to be visible about the right things, at the right time. Eventually trying to fit in a society 😄!
 
 ## Maybe more than Physical AI
 

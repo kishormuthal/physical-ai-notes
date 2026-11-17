@@ -1,6 +1,6 @@
 [project]
 site_name = "Physical AI Study Notes"
-site_description = "A demo documentation site"
+site_description = ""
 # IMPORTANT: navigation.instant needs site_url. Set it to your real address
 # before publishing, e.g. "https://kishormuthal.github.io/physical-ai-notes/"
 site_url = "https://kishormuthal.github.io/physical-ai-notes/"
@@ -158,5 +158,5 @@ generator = false
 
 [[project.extra.social]]
 icon = "fontawesome/brands/github"
-link = "https://github.com/yourname"
+link = "https://github.com/kishormuthal/physical-ai-notes"
 name = "GitHub"
